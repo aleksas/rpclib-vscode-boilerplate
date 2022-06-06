@@ -14,6 +14,7 @@
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/i686-w64-mingw32-gdb",
             "miDebuggerArgs": "--eval-command='target select remote 127.0.0.1:3456' ${command:cmake.launchTargetPath}",
+            "serverLaunchTimeout": 20000,
             "debugServerPath": "/usr/bin/wine",
             "debugServerArgs": "Z:/usr/share/win32/gdbserver.exe localhost:3456 ${command:cmake.launchTargetPath}"
         }
