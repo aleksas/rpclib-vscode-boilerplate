@@ -7,14 +7,4 @@ services:
     build:
       context: ./
       dockerfile: win.Dockerfile
-    image: "rpclib:latest"
     command: ["/usr/local/bin/server"]
-  client:
-    restart: always
-    build:
-      context: ./
-      dockerfile: nix.Dockerfile    
-    depends_on:
-      - server
-    image: "rpclib:latest"
-    command: ["/usr/local/bin/client"]
